@@ -1,0 +1,42 @@
+@import url('./header.css');
+@import url('./section-search.css');
+@import url('./section-carousel.css');
+@import url('./topics.css');
+@import url('./contact.css');
+@import url('./footer.css');
+
+:root {
+  --menu-color: linear-gradient(97.54deg, #002F52 25.49%, #326589 165.37%);
+  --blue: #002F52;
+  --secondary-color: #eb9b00;
+  --background-color: #ebecee;
+  --header-background-color: #fff;
+  --font-family: "Poppins", sans-serif; 
+  
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-color: var(--menu-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+header .menu-mobile a {
+  background: var(--menu-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

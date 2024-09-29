@@ -1,0 +1,231 @@
+.section-carousel {
+  /* padding: 0px 24px 24px 24px; */
+  padding-bottom: 24px;
+}
+
+.section-carousel__title {
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: var(--header-background-color);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 22px 0 11px 0;
+  /* margin-left: -24px;
+  margin-right: -24px; */
+}
+
+.section-carousel__container {
+  padding: 1em 0;
+}
+
+.section-carousel__container__item {
+
+}
+
+.section-carousel__container__item img {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.section-carousel__content-card {
+  border-radius: 10px;
+  background-color: var(--header-background-color);
+  padding: 16px;
+  box-shadow: 1px 4px 5px 1px #00000038;
+  margin: 1em 24px 0;
+}
+
+.section-carousel__content-card__content {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+
+
+.section-carousel__content-card__text {
+  display: flex;
+  flex-direction: column;
+  
+  width: 55%;
+  padding-right: 10px;
+}
+
+.section-carousel__content-card__subtitle {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.section-carousel__content-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.section-carousel__content-card__description {
+  font-size: 14px;
+}
+
+.section-carousel__content-card__actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.section-carousel__content-card__actions__item {
+  text-decoration: none;
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.section-carousel__content-card__actions__item img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.section-carousel__content-card__actions__first {
+  width: 55%;
+}
+
+.section-carousel__content-card__read-more {
+  background-color: var(--secondary-color);
+  display: block;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  width: 45%;
+}
+
+.section-carousel__content-card__image {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  display: none;
+}
+
+.swiper-pagination { 
+  position: initial;
+  margin: 0.5em 0;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+
+}
+
+.section-carousel__content-card__text__stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 0.5em;
+}
+
+.star {
+  background-image: url('../images/icones/star.svg');
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  
+  :root {
+    --swiper-navigation-color: white;
+    --swiper-navigation-size: 18px;
+    --swiper-navigation-sides-offset: 15px;
+  }
+
+  .section-carousel__title {
+    padding: 52px 0 16px 0;
+    font-size: 26px;
+  }
+  
+  .section-carousel__container {
+    padding: 2em 48px;
+    max-width: 821px;
+    margin: 1em auto;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--menu-color);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .section-carousel__content-card {
+    max-width: 588px;
+    margin: 1em auto;
+  }
+
+  .section-carousel__content-card__text {
+    width: 70%;
+    padding-right: 2.5em;
+  }
+
+  .section-carousel__content-card__image {
+    width: 30%;
+  }
+
+  .section-carousel__content-card__description {
+    font-size: 16px;
+  }
+
+  .section-carousel__content-card__actions__first {
+    width: 70%;
+  }
+
+  .section-carousel__content-card__read-more {
+    width: 30%;
+  }
+
+  .section-carousel__content-card__actions__item {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .section-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-carousel__title {
+    width: 100%;
+ }
+
+  .section-carousel__container {
+    margin: 50px 46px 50px 0;
+  }
+
+  .section-carousel__content-card {
+    margin: 24px 0 0;
+  }
+
+  .section-carousel__content-card__text {
+    padding-right: 1.5em;
+  }
+
+  .section-carousel__content-card__subtitle {
+    font-size: 32px;
+    line-height: 1.2em;
+  }
+}

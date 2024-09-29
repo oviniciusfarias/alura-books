@@ -1,0 +1,61 @@
+.section-search {
+  background: var(--menu-color);
+  color: var(--header-background-color);
+  padding: 36px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-search__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section-search__text {
+
+}
+
+.section-search__input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 24px;
+  padding: 12px 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.section-search__input::placeholder {
+  color: #fff;
+  font-size: 14px;
+  background-image: url('../images/icones/pesquisa.svg');
+  background-repeat: no-repeat;
+  background-position: 15% center;
+  background-size: 24px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .section-search {
+    padding: 80px 5%;
+  }
+  
+  .section-search__title {
+    font-size: 36px;
+  }
+
+
+  .section-search__input {
+    width: 100%;
+    max-width: 470px;
+  }
+
+  .section-search__input::placeholder {
+    background-position: 22% center;
+  }
+}
